@@ -1,337 +1,181 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="bn">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Birthday Night 🎂</title>
-<link rel="stylesheet" href="style.css">
+<title>Jahangir | Best Friends Forever 💙</title>
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+ margin:0;color:#f4faff;font-family:Arial,sans-serif;
+ background:#061326;
+}
+body:before{
+ content:"";position:fixed;inset:-10px;z-index:-1;
+ background:linear-gradient(#02091dbb,#04152be8),url("friends.jpg") center/cover no-repeat;
+ filter:blur(2px);
+}
+nav{
+ position:sticky;top:0;padding:14px;text-align:center;
+ background:#041329ed;border-bottom:1px solid #45caff66;
+ z-index:5;color:#9beaff;font-weight:bold;
+}
+nav a{color:white;text-decoration:none;margin:0 7px;font-size:12px}
+.hero{
+ min-height:85vh;display:flex;align-items:center;justify-content:center;
+ text-align:center;padding:25px;
+}
+.panel{
+ width:100%;max-width:750px;padding:30px 18px;
+ background:#06152cbb;border:1px solid #55cfff77;
+ border-radius:22px;box-shadow:0 0 35px #168bff33;
+}
+h1{font-size:clamp(45px,12vw,80px);margin:20px 0;color:#fff}
+.blue{color:#55cfff;text-shadow:0 0 20px #168bff}
+h2{color:#8be4ff;text-align:center;font-size:30px}
+p{line-height:1.9}
+.btn{
+ display:inline-block;margin:8px 4px;padding:13px 20px;
+ border:1px solid #8beaff;border-radius:30px;
+ color:white;background:linear-gradient(120deg,#087acb,#174e9e);
+ font-size:15px;cursor:pointer;
+}
+section.content{padding:45px 16px;scroll-margin-top:60px}
+.card{
+ max-width:750px;margin:15px auto;padding:22px;
+ background:#071a32eF;border:1px solid #55cfff55;
+ border-radius:15px;line-height:1.9;
+}
+.letter{
+ max-width:750px;margin:auto;padding:25px 19px;
+ background:#eff8ff;color:#173754;border-radius:9px;
+ box-shadow:0 10px 40px #0006;
+}
+.letter h2{color:#075c96}
+.letter p{line-height:2;font-size:15px}
+#surpriseBox{
+ display:none;max-width:650px;margin:25px auto;padding:24px;
+ background:#071a32;border:1px solid #55cfff;
+ border-radius:18px;text-align:center;
+ box-shadow:0 0 35px #168bff44;
+}
+#surpriseBox h2{font-size:30px}
+.gift{font-size:65px;animation:bob 1.5s infinite alternate}
+@keyframes bob{to{transform:translateY(-10px) rotate(5deg)}}
+.spark{
+ position:fixed;z-index:20;pointer-events:none;
+ animation:rise 1.5s forwards;
+}
+@keyframes rise{
+ to{transform:translateY(-100px) scale(1.7);opacity:0}
+}
+footer{text-align:center;padding:25px;background:#020b18;color:#9beaff}
+@media(max-width:500px){
+ nav a{display:inline-block;margin:6px 4px}
+ .panel{padding:25px 13px}
+ .letter{padding:22px 15px}
+}
+</style>
 </head>
-
 <body>
 
-<div class="stars"></div>
+<nav>
+ ♛ FRIENDSHIP FOREVER 💙<br><br>
+ <a href="#home">Home</a>
+ <a href="#story">Friendship</a>
+ <a href="#letter">Letter</a>
+ <a href="#surprise">Surprise</a>
+</nav>
 
-<!-- MUSIC BUTTON -->
-<button class="musicBtn" onclick="toggleMusic()">🔊</button>
+<header class="hero" id="home">
+ <div class="panel">
+  <div style="letter-spacing:3px;color:#9beaff">A LITTLE GIFT FOR MY FRIEND</div>
+  <h1>Jahangir<br><span class="blue">♡</span></h1>
+  <p style="font-size:21px;color:#8be4ff">My Brother by Heart</p>
+  <p>কিছু মানুষ বন্ধু হয়ে আসে,<br>
+  তারপর নিজের মানুষের মতো হয়ে যায়।<br>
+  তুই আমার কাছে তেমনই একজন বন্ধু। 💙</p>
+  <a class="btn" href="#letter">💌 পড় চিঠি</a>
+  <button class="btn" id="topSurpriseBtn">🎁 Open Surprise</button>
+ </div>
+</header>
 
-<!-- ================= HOME ================= -->
-
-<section id="home" class="page active">
-
-    <div class="room">
-
-        <div class="ceilingLight"></div>
-
-        <div class="banner">
-            ✦ HAPPY BIRTHDAY ✦
-        </div>
-
-        <div class="balloon b1">🎈</div>
-        <div class="balloon b2">🎈</div>
-        <div class="balloon b3">🎈</div>
-        <div class="balloon b4">🎈</div>
-
-        <div class="welcome">
-
-            <div class="miniTitle">
-                TODAY IS A SPECIAL DAY
-            </div>
-
-            <h1>
-                HAPPY<br>
-                <span>BIRTHDAY</span>
-            </h1>
-
-            <p>
-                Someone deserves a little<br>
-                extra happiness today. ❤️
-            </p>
-
-            <button class="glowBtn" onclick="openGift()">
-                🎁 OPEN THE GIFT
-            </button>
-
-        </div>
-
-    </div>
-
+<section class="content" id="story">
+ <h2>Our Friendship ✦</h2>
+ <div class="card">
+  <h3>🤝 ভাইয়ের মতো বন্ধু</h3>
+  <p>বন্ধুত্ব মানে শুধু একসঙ্গে হাসাহাসি নয়। বিশ্বাস, সম্মান, যত্ন আর একে অপরের ভালো চাওয়ার নামও বন্ধুত্ব।</p>
+ </div>
+ <div class="card">
+  <h3>🌌 ছোট ছোট স্মৃতি</h3>
+  <p>সব স্মৃতি ছবিতে ধরে রাখতে হয় না। কিছু মুহূর্ত মনে থেকে যায়—একটা হাসি, একটা কথা, কিংবা একসঙ্গে কাটানো সাধারণ একটা দিন।</p>
+ </div>
+ <div class="card">
+  <h3>✨ ভালো থাকিস সবসময়</h3>
+  <p>নিজের স্বপ্নের দিকে এগিয়ে যাস, নতুন কিছু শিখিস, পরিবারের যত্ন নিস। তোর জীবনের জন্য সবসময় শুভকামনা রইল।</p>
+ </div>
+ <p style="text-align:center;color:#9beaff;font-size:20px">
+ “বন্ধু মানে একে অপরের ভালো চাওয়া।” 💙
+ </p>
 </section>
 
-
-<!-- ================= GIFT ================= -->
-
-<section id="giftPage" class="page">
-
-    <div class="content">
-
-        <div class="topText">
-            A LITTLE SURPRISE
-        </div>
-
-        <h2>
-            YOU FOUND IT! 🎁
-        </h2>
-
-        <div class="bigGift" onclick="openCake()">
-            🎁
-        </div>
-
-        <p>
-            Tap the gift to see what's inside
-        </p>
-
-    </div>
-
+<section class="content" id="letter">
+ <h2>A Letter For You 💌</h2>
+ <div class="letter">
+  <h2>প্রিয় বন্ধু Jahangir,</h2>
+  <p>বন্ধু, তোকে নিয়ে এই ছোট্ট ওয়েবসাইটটা বানালাম একটা কথা মনে করিয়ে দেওয়ার জন্য—ভালো বন্ধুত্ব জীবনের সুন্দর একটা উপহার। সবসময় বড় আয়োজন বা দামি উপহার লাগে না; কখনো কয়েকটা আন্তরিক কথাই অনেক কিছু বুঝিয়ে দিতে পারে।</p>
+  <p>জীবনে অনেক মানুষের সঙ্গে পরিচয় হয়। কেউ কিছুদিন পাশে থাকে, কেউ আবার ধীরে ধীরে আপন হয়ে ওঠে। বন্ধুত্বের সৌন্দর্যটা এখানেই—এটা শুধু পরিচয়ের নাম নয়; সময়, বিশ্বাস, যত্ন আর সম্মানের মাধ্যমে তৈরি হওয়া একটা সম্পর্ক।</p>
+  <p>Jahangir, আমি চাই আমাদের বন্ধুত্বে হাসি-ঠাট্টা থাকবে, মজার গল্প থাকবে, আবার দরকার হলে মন খুলে কথা বলার জায়গাও থাকবে। কোনো কিছু ভালো না লাগলে আমরা যেন সম্মানের সঙ্গে বলতে পারি। ভুল বোঝাবুঝি হলে দূরে সরে যাওয়ার বদলে কথা বলে বুঝে নেওয়ার চেষ্টা করি।</p>
+  <p>সবসময় একমত হওয়া জরুরি নয়। সবার চিন্তা, পছন্দ আর স্বপ্ন আলাদা। ভালো বন্ধুত্বের একটা বড় দিক হলো একে অপরের পার্থক্যকে সম্মান করা। একজনের ভালো খবর শুনে আনন্দিত হওয়া, কঠিন সময়ে তার কথা শোনা, আর সুযোগ হলে খোঁজ নেওয়া—এসব ছোট কাজই সম্পর্ককে সুন্দর রাখে।</p>
+  <p>জীবনে এমন দিন আসবে যখন সবকিছু সহজ মনে হবে না। ভবিষ্যৎ নিয়ে চিন্তা থাকবে, কাজের চাপ থাকবে, কখনো মন খারাপও হতে পারে। তখন নিজের লক্ষ্য ভুলে যাস না। নিজের স্বপ্নের জন্য চেষ্টা কর, নতুন কিছু শিখ, পরিবারের যত্ন নে এবং নিজের ভালো থাকার দিকেও খেয়াল রাখিস।</p>
+  <p>বন্ধুত্বে সবসময় বড় উপহার লাগে না। কখনো একটা মেসেজ, একটু খোঁজ নেওয়া, একসঙ্গে হাসা কিংবা দরকারের সময় মন দিয়ে কথা শোনাই অনেক। আমি চাই আমাদের বন্ধুত্বেও এমন সহজ আর সত্যি মুহূর্তগুলো জমতে থাকুক।</p>
+  <p>সময় বদলাবে, নতুন দায়িত্ব আসবে, ব্যস্ততাও বাড়তে পারে। সবসময় আগের মতো কথা বলা নাও হতে পারে। কিন্তু আন্তরিকতা আর সম্মান থাকলে বন্ধুত্বকে সুন্দরভাবে ধরে রাখার উপায় খুঁজে পাওয়া যায়। বন্ধুত্ব মানে কাউকে আটকে রাখা নয়; বরং নিজের পথে এগিয়ে যেতে তাকে উৎসাহ দেওয়া এবং তার ভালো থাকা কামনা করা।</p>
+  <p>তোর জীবনের জন্য আমার অনেক শুভকামনা রইল, Jahangir। তুই যেন নিজের স্বপ্ন পূরণ করার সাহস পাস, ভালো মানুষের সঙ্গ পাস, নিজের অর্জন নিয়ে গর্ব করতে পারিস এবং প্রতিদিন কিছু না কিছু নতুন শিখতে পারিস। তোর জীবনে আনন্দ থাকুক, শান্তি থাকুক, আর কঠিন সময় এলে সামনে এগিয়ে যাওয়ার শক্তি থাকুক।</p>
+  <p>এই ওয়েবসাইটে তোদের দুজনের ছবিটা পুরো পেছনে ওয়ালপেপার হিসেবে রাখার জায়গা আছে। ছবিটা লেখার সৌন্দর্য নষ্ট না করে যেন নরমভাবে দেখা যায়, তাই তার ওপর নীল-কালো আবরণ দেওয়া হয়েছে।</p>
+  <p>শেষে শুধু এটুকুই বলব—ভালো বন্ধু হওয়া যেমন সুন্দর, তেমনি ভালো বন্ধুত্বের যত্ন নেওয়াও গুরুত্বপূর্ণ। চল, আমরা বন্ধুত্বে হাসি, বিশ্বাস, সম্মান আর বোঝাপড়ার জায়গাটা ধরে রাখি। ভালো থাকিস, নিজের যত্ন নিস, আর নিজের স্বপ্নের দিকে এগিয়ে চলিস।</p>
+  <p><strong>বন্ধুত্ব থাকুক আজীবন, Jahangir. 💙</strong></p>
+  <p style="text-align:right;color:#075c96">তোর বন্ধু,<br>সবসময় শুভকামনায় ❤️</p>
+ </div>
 </section>
 
-
-<!-- ================= CAKE ================= -->
-
-<section id="cakePage" class="page">
-
-    <div class="content">
-
-        <div class="topText">
-            SURPRISE #01
-        </div>
-
-        <h2>
-            MAKE A WISH ✨
-        </h2>
-
-        <div class="cake">
-
-            <div class="flame f1"></div>
-            <div class="flame f2"></div>
-            <div class="flame f3"></div>
-
-            <div class="candle c1"></div>
-            <div class="candle c2"></div>
-            <div class="candle c3"></div>
-
-            <div class="cakeTop"></div>
-            <div class="cakeMiddle"></div>
-            <div class="cakeBottom"></div>
-
-            <div class="plate"></div>
-
-        </div>
-
-        <p class="cakeText">
-            🎂 Make a wish and blow the candles!
-        </p>
-
-        <button class="glowBtn" onclick="showCards()">
-            CONTINUE ✨
-        </button>
-
-    </div>
-
+<section class="content" id="surprise">
+ <h2>A Little Surprise 🎁</h2>
+ <p style="text-align:center">নিচের বাটনে চাপ দিয়ে সারপ্রাইজ খুলে দেখ।</p>
+ <div style="text-align:center">
+  <button class="btn" id="surpriseBtn">🎁 Unlock Friendship Surprise</button>
+ </div>
+ <div id="surpriseBox">
+  <div class="gift">🎁</div>
+  <h2>For You, Jahangir 💙</h2>
+  <p>বন্ধু, তোর জীবন সুন্দর হোক, তোর চেষ্টা সফল হোক, আর তুই যেন নিজের মতো করে ভালো থাকতে পারিস। এই ছোট্ট উপহারটা তোর জন্য—অনেক শুভকামনা রইল!</p>
+  <div style="font-size:30px">🤝 💙 ✨ 💙 🤝</div>
+ </div>
 </section>
 
+<footer>Made with 💙 for Jahangir<br>FRIENDSHIP · TRUST · RESPECT</footer>
 
-<!-- ================= CARDS ================= -->
-
-<section id="cardsPage" class="page">
-
-    <div class="content">
-
-        <div class="topText">
-            SURPRISE #02
-        </div>
-
-        <h2>
-            THREE LITTLE<br>
-            <span>WISHES</span>
-        </h2>
-
-        <div class="wishGrid">
-
-            <div class="wishCard">
-                <div class="icon">🌟</div>
-                <h3>HAPPINESS</h3>
-                <p>
-                    জীবনে সবসময় হাসি আর
-                    সুন্দর মুহূর্ত থাকুক।
-                </p>
-            </div>
-
-            <div class="wishCard">
-                <div class="icon">🚀</div>
-                <h3>SUCCESS</h3>
-                <p>
-                    তোর সব স্বপ্ন একদিন
-                    সত্যি হোক।
-                </p>
-            </div>
-
-            <div class="wishCard">
-                <div class="icon">❤️</div>
-                <h3>GOOD PEOPLE</h3>
-                <p>
-                    জীবনে সবসময় ভালো
-                    মানুষদের পাশে পাস।
-                </p>
-            </div>
-
-        </div>
-
-        <button class="glowBtn" onclick="showTimeline()">
-            ONE MORE THING →
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- ================= TIMELINE ================= -->
-
-<section id="timelinePage" class="page">
-
-    <div class="content">
-
-        <div class="topText">
-            SURPRISE #03
-        </div>
-
-        <h2>
-            ANOTHER YEAR,<br>
-            <span>ANOTHER STORY</span>
-        </h2>
-
-        <div class="timeline">
-
-            <div class="timeItem">
-                <div class="dot">01</div>
-                <div>
-                    <h3>KEEP SMILING</h3>
-                    <p>
-                        যত কঠিন দিনই আসুক,
-                        হাসিটা যেন হারিয়ে না যায়।
-                    </p>
-                </div>
-            </div>
-
-            <div class="timeItem">
-                <div class="dot">02</div>
-                <div>
-                    <h3>KEEP DREAMING</h3>
-                    <p>
-                        বড় স্বপ্ন দেখবি,
-                        তারপর সেটা পূরণ করবি।
-                    </p>
-                </div>
-            </div>
-
-            <div class="timeItem">
-                <div class="dot">03</div>
-                <div>
-                    <h3>KEEP GOING</h3>
-                    <p>
-                        সামনে যত দূরই হোক,
-                        থামবি না।
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <button class="glowBtn" onclick="showLetter()">
-            FINAL SURPRISE 💌
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- ================= LETTER ================= -->
-
-<section id="letterPage" class="page">
-
-    <div class="content">
-
-        <div class="envelope" onclick="openLetter()">
-            💌
-        </div>
-
-        <h2>
-            A MESSAGE<br>
-            <span>FOR YOU</span>
-        </h2>
-
-        <button class="glowBtn" onclick="openLetter()">
-            OPEN LETTER
-        </button>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FINAL ================= -->
-
-<section id="finalPage" class="page">
-
-    <div class="finalBox">
-
-        <div class="sparkle">✦</div>
-
-        <div class="small">
-            FINAL MESSAGE
-        </div>
-
-        <h1>
-            HAPPY<br>
-            <span>BIRTHDAY</span>
-        </h1>
-
-        <div class="name">
-            BIRTHDAY STAR ❤️
-        </div>
-
-        <div class="letter">
-
-            <p>
-                শুভ জন্মদিন! 🎂
-            </p>
-
-            <p>
-                নতুন এই বছরটা তোর জীবনে
-                অনেক আনন্দ, সফলতা আর
-                সুন্দর মুহূর্ত নিয়ে আসুক।
-            </p>
-
-            <p>
-                যেসব স্বপ্ন এখনো পূরণ হয়নি,
-                সেগুলো একে একে পূরণ হোক।
-            </p>
-
-            <p>
-                সবসময় ভালো থাকিস,
-                হাসিখুশি থাকিস,
-                আর নিজের মতোই থাকিস। ❤️
-            </p>
-
-        </div>
-
-        <div class="signature">
-            Made with ❤️ by Jahid
-        </div>
-
-        <button class="glowBtn" onclick="celebrate()">
-            🎉 CELEBRATE
-        </button>
-
-    </div>
-
-</section>
-
-
-<div id="confetti"></div>
-
-<script src="script.js"></script>
-
+<script>
+document.addEventListener("DOMContentLoaded",function(){
+ const box=document.getElementById("surpriseBox");
+ function openSurprise(){
+  box.style.display="block";
+  box.scrollIntoView({behavior:"smooth",block:"center"});
+  for(let i=0;i<25;i++){
+   const e=document.createElement("span");
+   e.className="spark";
+   e.textContent=["✦","💙","✨","♡","🤝"][Math.floor(Math.random()*5)];
+   e.style.left=Math.random()*100+"vw";
+   e.style.top=Math.random()*85+"vh";
+   e.style.fontSize=(14+Math.random()*22)+"px";
+   document.body.appendChild(e);
+   setTimeout(()=>e.remove(),1600);
+  }
+ }
+ document.getElementById("topSurpriseBtn").addEventListener("click",openSurprise);
+ document.getElementById("surpriseBtn").addEventListener("click",openSurprise);
+});
+</script>
 </body>
 </html>
